@@ -1,0 +1,35 @@
+{
+  "name": "simd56s-sdk",
+  "version": "0.1.0",
+  "description": "Assembler and emulator for the SIMD56S.",
+  "main": "./src/index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot --config webpack.dev.js",
+    "build-dev": "webpack --mode development --config webpack.dev.js",
+    "build": "webpack --mode production --config webpack.prod.js"
+  },
+  "author": "krawthekrow",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "immer": "^9.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}
