@@ -11,27 +11,25 @@
   "author": "krawthekrow",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.2",
-    "postcss-loader": "^2.1.6",
-    "precss": "^3.1.2",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-loader": "^6.2.1",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "bootstrap": "^5.1.3",
+    "popper.js": "^1.15.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

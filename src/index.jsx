@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './scss/gpu-sim-main.scss';
 
 import React from 'react';
@@ -6,9 +5,9 @@ import ReactDOM from 'react-dom';
 
 import {Dimensions, Vector, Rect} from 'utils/Utils.js';
 
-import GPUSimController from './sim/GPUSimController.js';
+import GpuSimController from './sim/GpuSimController.js';
 
-class GPUSimGUI extends React.Component {
+class GpuSimGui extends React.Component {
 	constructor(props) {
 		super(props);
 		this.SCREEN_CANVAS_DIMS = new Dimensions(400, 400);
@@ -19,7 +18,7 @@ class GPUSimGUI extends React.Component {
 	}
 	componentDidMount() {
 		this.screenCtx = this.screenCanvas.getContext('2d');
-		this.controller = new GPUSimController(
+		this.controller = new GpuSimController(
 			this.screenCtx, this.SCREEN_BOUNDING_RECT);
 		this.controller.startSim();
 	}
@@ -34,4 +33,4 @@ class GPUSimGUI extends React.Component {
 	}
 };
 
-ReactDOM.render(<GPUSimGUI/>, document.getElementById('index'));
+ReactDOM.render(<GpuSimGui/>, document.getElementById('index'));

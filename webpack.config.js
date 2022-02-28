@@ -20,39 +20,42 @@ module.exports = {
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			use: {
-				loader: 'babel-loader'
-			}
+				loader: 'babel-loader',
+			},
 		}, {
 			test: /\.(css)$/,
 			use: [{
 				loader: 'style-loader'
 			}, {
 				loader: 'css-loader'
-			}]
+			}],
 		}, {
 			test: /\.(scss)$/,
 			use: [{
 				loader: 'style-loader'
 			}, {
 				loader: 'css-loader',
-				query: {
-					modules: true,
-					localIdentName: '[name]__[local]___[hash:base64:5]'
-				}
 			}, {
 				loader: 'postcss-loader',
 				options: {
 					plugins: () => {
 						return [
-							require('precss'),
-							require('autoprefixer')
+							require('autoprefixer'),
 						];
-					}
-				}
+					},
+				},
 			}, {
-				loader: 'sass-loader'
-			}]
-		}]
+				loader: 'sass-loader',
+			}],
+		}, {
+			test: /\.s$/,
+			include: [
+				path.resolve(__dirname, 'prog/samples')
+			],
+			use: {
+				loader: 'raw-loader'
+			},
+		}],
 	},
-	plugins: [htmlPlugin]
+	plugins: [htmlPlugin],
 };
